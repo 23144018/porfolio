@@ -10,7 +10,7 @@
 
   <!-- Navbar -->
   <nav class="navbar">
-    <h2 class="logo">Sneha</h2>
+    <h2 class="logo">Sneha Pal</h2>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -22,46 +22,130 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero reveal">
-    <img src="images/myphoto.jpg" class="profile-img">
+    <img src="myphoto.jpg" class="profile-img">
     <h1>Hi, I'm Sneha 👋</h1>
-    <p>Creative Developer | Tech Enthusiast</p>
+    <p>Computer Science Student| Tech Enthusiast</p>
     <a href="#projects" class="btn">Explore My Work</a>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section reveal">
-    <h2>About Me</h2>
-    <img src="myphoto.jpg" class="about-img">
-    <p> I am Sneha Pal, a passionate Computer Science student currently pursuing my Master’s degree. I have a strong interest in web development, digital marketing, and creating user-friendly digital experiences.
+ <!-- About Section -->
+<section id="about" class="section reveal">
 
-I have hands-on experience in HTML, CSS, JavaScript, and Python, along with knowledge of SEO practices gained during my internship at ScholarHat. During this time, I worked on on-page and off-page SEO, site audits, and content optimization, which helped me understand how technology and marketing work together.
+  <style>
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-I enjoy building creative and practical projects like web applications and AI-based tools. I am always eager to learn new technologies, improve my skills, and take on challenges that help me grow both technically and professionally.
+    .about-text {
+      flex: 1;
+      text-align: left;
+    }
 
-My goal is to build impactful digital solutions and establish myself in the tech and digital industry..</p>
-  </section>
+    .about-text p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
 
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .about-img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    
+    <!-- Text -->
+    <div class="about-text">
+      <p>
+        I am Sneha Pal, a passionate Computer Science student currently pursuing my Bachelor's degree from Dev Sanskriti Vishwavidhyalaya. I have a strong interest in web development, digital marketing, and creating user-friendly digital experiences.
+      </p>
+      <p>
+        I have hands-on experience in HTML, CSS, JavaScript, and Python, along with knowledge of SEO practices gained during my internship at ScholarHat. I worked on on-page and off-page SEO, site audits, and content optimization.
+      </p>
+      <p>
+        I enjoy building creative and practical projects like web applications. I am always eager to learn new technologies and improve my skills.
+      </p>
+      <p>
+        My goal is to build impactful digital solutions and grow in the tech and digital industry.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="about-image">
+      <img src="myphoto.jpg" alt="Sneha" class="about-img">
+    </div>
+
+  </div>
+
+</section>
   <!-- Projects -->
   <section id="projects" class="section reveal">
     <h2>Projects</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://via.placeholder.com/300" class="card-img">
+        <img src="Auraflow.png" class="card-img">
         <h3>Yoga Booking App</h3>
         <p>Booking system with login and slot scheduling.</p>
-        <button>View</button>
+         <a href="https://23144018.github.io/auraflow-yoga/" class="bt">View</a>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300" class="card-img">
+        <img src="travel.png" class="card-img">
         <h3>Travel website</h3>
-        <p>Generates creative stories using AI.</p>
-        <button>View</button>
+        <p>A visually appealing travel website showcasing destinations, packages, and an engaging user interface for better user experience.</p>
+        <a href="https://23144018.github.io/auraflow-yoga/" class="bt">View</a>
+      </div>
+      
+      <div class="card">
+        <img src="greenworld.png" class="card-img">
+        <h3>Blog post website</h3>
+        <p>A blog platform focused on environmental awareness, featuring well-structured content and responsive design.</p>
+        <a href="https://codesevak.blogspot.com/" class="bt">View</a>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300" class="card-img">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal portfolio design.</p>
-        <button>View</button>
+        <img src="rankroot.png" class="card-img">
+        <h3>Blog post website</h3>
+        <p>A digital marketing website highlighting SEO services, content strategies, and online growth solutions.</p>
+        <a href="https://rankroots.wixsite.com/rankroots" class="bt">View</a>
+      </div>
+       <div class="card">
+        <img src="craftedcode.png" class="card-img">
+        <h3>Responsivewebsite</h3>
+        <p>A responsive website built to showcase modern web design practices and clean user interface layouts.</p>
+        <a href="https://craftedcode.jimdosite.com/" class="bt">View</a>
+      </div>
+       <div class="card">
+        <img src="Nature.png" class="card-img">
+        <h3>Nature website</h3>
+        <p>A nature-themed website designed to promote environmental beauty with engaging visuals and simple navigation.</p>
+        <a href="https://naturewishper.weebly.com/" class="bt">View</a>
       </div>
     </div>
   </section>
@@ -81,23 +165,75 @@ My goal is to build impactful digital solutions and establish myself in the tech
     </div>
   </section>
 
- <!-- Experience -->
-  <section id="experience" class="section reveal">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>SEO Intern - ScholarHat</h3>
-      <p>
-        I completed a 2-month internship as an SEO Intern at ScholarHat, where I gained practical experience in digital marketing and search engine optimization.
-      </p>
-      <p>
-        During my internship, I worked on both on-page and off-page SEO techniques, performed website audits, and optimized content for better search engine ranking. I also created titles and meta descriptions for web pages and learned how to improve website visibility and traffic.
-      </p>
-      <p>
-        This experience helped me understand how SEO strategies and technical skills work together to enhance online presence.
-      </p>
-    </div>
-  </section>
+<!-- Experience -->
+<section id="experience" class="section reveal">
 
+  <style>
+    .experience-card {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      margin-top: 20px;
+    }
+
+    .experience-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .work-list {
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    .work-list li {
+      margin-bottom: 10px;
+    }
+
+    .work-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .work-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <h2>Experience</h2>
+
+  <div class="experience-card">
+    <h3>SEO Intern - ScholarHat</h3>
+
+    <!-- Add your work screenshot -->
+    <img src="logo.png" class="experience-img">
+
+    <p>
+      I completed a 2-month internship as an SEO Intern at ScholarHat, where I gained practical experience in digital marketing and search engine optimization.
+    </p>
+
+    <p><strong>My Work Included:</strong></p>
+    <ul class="work-list">
+      <li>Performed On-page SEO (meta tags, keywords, headings optimization)</li>
+      <li>Worked on Off-page SEO (backlink creation, submissions)</li>
+      <li>Conducted website audits and improved performance</li>
+      <li>Optimized blog content for better ranking</li>
+      <li>Researched keywords and competitor analysis</li>
+    </ul>
+
+    <!-- Add your work links -->
+    <p><strong>Sample Work:</strong></p>
+    <a href="https://your-blog-link.com" target="_blank" class="work-link">View Blog / Content Work</a><br>
+    <a href="https://your-project-link.com" target="_blank" class="work-link">View SEO Project</a>
+
+  </div>
+
+</section>
   <footer>
     <p>© 2026 Sneha Portfolio</p>
   </footer>
